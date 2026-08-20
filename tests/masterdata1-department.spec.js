@@ -63,7 +63,7 @@ test('delete department', async ({ page }) => {
   await page.getByRole('complementary').getByTestId('Department').click();
   await page.getByTestId('add new').first().click();
   await page.locator('.react-select__input-container.css-1ezlvm0').click();
-  await page.getByRole('option', { name: 'Marketing' }).click();
+  await page.getByRole('option', { name: 'IT Division' }).click();
   await page.getByRole('button', { name: 'Delete' }).click();
   await page.getByRole('button', { name: 'Yes, delete it!' }).click();
   await page.getByRole('button', { name: 'OK' }).click();
